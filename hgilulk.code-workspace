@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../hgilulk"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"vichislit po ip": "c"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "saitandrua"
+	}
+}
