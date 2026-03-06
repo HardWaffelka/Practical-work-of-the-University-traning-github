@@ -1,42 +1,42 @@
 # -*- coding: utf-8 -*-
 
-# class Role:
-#     """Класс для роли пользователя (Админ/Обычный пользователь)"""
-#     def __init__(self):
-#         self.isAdmin = False
+class Role:
+    """Класс для роли пользователя (Админ/Обычный пользователь)"""
+    def __init__(self):
+        self.isAdmin = False
 
-#     def becomeAdmin(self):
-#         self.isAdmin = True
+    def becomeAdmin(self):
+        self.isAdmin = True
 
-#     def becomeUser(self):
-#         self.isAdmin = False
-
-
-# class BookInfo:
-#     """Класс, хранящий информацию о книге (по аналогии с C#)"""
-#     def __init__(self, title, author, genre, year, pages):
-#         self.title = title
-#         self.author = author
-#         self.genre = genre
-#         self.year = year
-#         self.pages = pages
-
-#     def __str__(self):
-#         """Для удобного вывода информации о книге"""
-#         return f"{self.author}, {self.genre}, {self.year}, {self.pages} стр."
+    def becomeUser(self):
+        self.isAdmin = False
 
 
-# class LocalLibrary:
-#     """Класс, представляющий библиотеку"""
-#     def __init__(self):
-#         # В Python в качестве ключа словаря может быть строка, поэтому используем его
-#         self.booksInLibrary = {}  # Словарь: ключ - название (str), значение - объект BookInfo
+class BookInfo:
+    """Класс, хранящий информацию о книге (по аналогии с C#)"""
+    def __init__(self, title, author, genre, year, pages):
+        self.title = title
+        self.author = author
+        self.genre = genre
+        self.year = year
+        self.pages = pages
 
-#     def GetAllBooks(self):
-#         """Возвращает весь словарь книг"""
-#         return self.booksInLibrary
+    def __str__(self):
+        """Для удобного вывода информации о книге"""
+        return f"{self.author}, {self.genre}, {self.year}, {self.pages} стр."
 
-#     def DisplayAllBooks(self):
+
+class LocalLibrary:
+    """Класс, представляющий библиотеку"""
+    def __init__(self):
+        # В Python в качестве ключа словаря может быть строка, поэтому используем его
+        self.booksInLibrary = {}  # Словарь: ключ - название (str), значение - объект BookInfo
+
+    def GetAllBooks(self):
+        """Возвращает весь словарь книг"""
+        return self.booksInLibrary
+
+    def DisplayAllBooks(self):
         """Отображает все книги в библиотеке"""
         if not self.booksInLibrary:
             print("Библиотека пуста.")
